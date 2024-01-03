@@ -1,0 +1,14 @@
+def get_valid_input():
+    user_input = input("Enter a string: ")
+    return user_input if user_input.isalpha() else None
+
+while True:
+    valid_input = get_valid_input()
+    
+    if valid_input:
+        reversed_string = valid_input[::-1]
+        print("Output:", reversed_string)
+        break
+      
+    else:
+        print("Error Reported! Enter text only.")
